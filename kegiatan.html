@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kegiatan - BEM Kemenag Universitas Dumai</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style> body { padding-top: 56px; } </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-moon-stars-fill"></i> BEM Kemenag
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">🏠 Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tentang-kami.html">🕌 Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="kegiatan.html">📅 Kegiatan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artikel.html">📰 Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">🖼️ Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="laporan.html">📄 Laporan</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+                    <a href="login.html" class="btn btn-warning">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-4">
+        
+        <div class="container my-5">
+    
+            <div class="row text-center mb-4">
+                <div class="col-12">
+                    <h1>📅 Daftar Kegiatan Kemenag</h1>
+                    <p class="lead">Ikuti berbagai program dan kegiatan kami untuk memperkaya wawasan dan spiritualitas.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/foto/kelastahsin.png" class="card-img-top" alt="Kajian Akbar">
+                        <div class="card-body">
+                            <span class="badge bg-primary mb-2">Kelas</span>
+                            <h5 class="card-title">Kelas Tahsin</h5>
+                            <p class="card-text text-muted">
+                                <i class="bi bi-calendar-event"></i> 28 Oktober 2025 <br>
+                                <i class="bi bi-geo-alt-fill"></i> Masjid Kampus Al-hasanah'
+                            </p>
+                            <p class="card-text">Mengadakan kelas bimbingan rutin untuk memperbaiki dan memperlancar bacaan Al-Qur'an (makhraj, tajwid) bagi mahasiswa.</p>
+                            <a href="kegiatan-detail.html" class="btn btn-primary">Lihat Detail & Daftar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0">
+                        <img src="assets/foto/baktisosial.jpg" class="card-img-top" alt="Bakti Sosial">
+                        <div class="card-body">
+                            <span class="badge bg-success mb-2">Sosial</span>
+                            <h5 class="card-title">Bakti Sosial Panti Asuhan</h5>
+                            <p class="card-text text-muted">
+                                <i class="bi bi-calendar-event"></i> 20 Oktober 2025 <br>
+                                <i class="bi bi-geo-alt-fill"></i> Panti Asuhan Doa Ayah & Ibu
+                            </p>
+                            <p class="card-text">Kegiatan berbagi dan silaturahmi bersama saudara-saudara kita di Panti Asuhan...</p>
+                            <a href="kegiatan-detail1.html" class="btn btn-primary">Lihat Detail & Daftar</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100 shadow-sm border-0 bg-light">
+                        <img src="assets/foto/kajianakbar.png" class="card-img-top" alt="Studi Banding" style="opacity: 0.7;">
+                        <div class="card-body">
+                            <span class="badge bg-secondary mb-2">SELESAI</span>
+                            <h5 class="card-title text-muted">Kajian akbar</h5>
+                            <p class="card-text text-muted">
+                                <i class="bi bi-calendar-event"></i> 10 September 2025 <br>
+                                <i class="bi bi-geo-alt-fill"></i> Universitas Lancang Kuning
+                            </p>
+                            <p class="card-text">Mengadakan acara (kajian, tabligh akbar) untuk mehasabah diri dan pentingnya ibadah sholat.</p>
+                            <a href="#" class="btn btn-secondary disabled">Kegiatan Selesai</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <nav aria-label="Page navigation example" class="mt-5">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled"><a class="page-link" href="#">Sebelumnya</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Selanjutnya</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 BEM Kemenag - Universitas Dumai. All Rights Reserved.</p>
+            <p>Dikelola oleh Divisi Kemenag BEM</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

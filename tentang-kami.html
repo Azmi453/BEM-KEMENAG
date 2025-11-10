@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tentang Kami - BEM Kemenag Universitas Dumai</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <style> body { padding-top: 56px; } </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <i class="bi bi-moon-stars-fill"></i> BEM Kemenag
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">🏠 Beranda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="tentang-kami.html">🕌 Tentang Kami</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="kegiatan.html">📅 Kegiatan</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="artikel.html">📰 Artikel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="galeri.html">🖼️ Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="laporan.html">📄 Laporan</a>
+                    </li>
+                </ul>
+                <div class="d-flex">
+                    <a href="login.html" class="btn btn-outline-light me-2">Login</a>
+                    <a href="login.html" class="btn btn-warning">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="py-4">
+        
+        <div class="container my-5">
+
+            <div class="row text-center mb-5">
+                <div class="col-12">
+                    <h1>🕌 Tentang Kami</h1>
+                    <p class="lead">Mengenal lebih dekat Kementerian Agama BEM Universitas Dumai.</p>
+                </div>
+            </div>
+
+            <ul class="nav nav-pills nav-fill mb-4" id="aboutUsTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="profil-tab" data-bs-toggle="tab" data-bs-target="#profil-content" type="button" role="tab" aria-controls="profil-content" aria-selected="true">
+                        <i class="bi bi-person-badge"></i> Profil BEM & Kemenag
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="visi-misi-tab" data-bs-toggle="tab" data-bs-target="#visi-misi-content" type="button" role="tab" aria-controls="visi-misi-content" aria-selected="false">
+                        <i class="bi bi-bullseye"></i> Visi & Misi
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="struktur-tab" data-bs-toggle="tab" data-bs-target="#struktur-content" type="button" role="tab" aria-controls="struktur-content" aria-selected="false">
+                        <i class="bi bi-diagram-3"></i> Struktur Organisasi
+                    </button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="divisi-tab" data-bs-toggle="tab" data-bs-target="#divisi-content" type="button" role="tab" aria-controls="divisi-content" aria-selected="false">
+                        <i class="bi bi-briefcase-fill"></i> Divisi Kemenag
+                    </button>
+                </li>
+            </ul>
+
+            <div class="tab-content" id="aboutUsTabContent">
+
+                <div class="tab-pane fade show active" id="profil-content" role="tabpanel" aria-labelledby="profil-tab">
+                    <div class="row align-items-center">
+                        <div class="col-md-6">
+                            <h3>Profil BEM Universitas Dumai</h3>
+                            <p>Badan Eksekutif Mahasiswa (BEM) Universitas Dumai adalah organisasi mahasiswa intra-kampus yang merupakan lembaga eksekutif di tingkat universitas. BEM bertugas sebagai perwakilan mahasiswa untuk menyalurkan aspirasi dan melaksanakan program kerja yang bermanfaat bagi mahasiswa dan masyarakat.</p>
+                            
+                            <h3 class="mt-4">Kementerian Agama (Kemenag)</h3>
+                            <p>Kementerian Agama adalah salah satu kementerian di bawah BEM Universitas Dumai yang berfokus pada pengembangan kehidupan beragama di lingkungan kampus. Kami berdedikasi untuk menciptakan suasana kampus yang religius, toleran, dan penuh dengan nilai-nilai spiritual.</p>
+                        </div>
+                        <div class="col-md-6">
+                            <img src="https://via.placeholder.com/500x350.png?text=Foto+Gedung+BEM" class="img-fluid rounded shadow" alt="Gedung BEM">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="visi-misi-content" role="tabpanel" aria-labelledby="visi-misi-tab">
+                    <div class="text-center p-4">
+                        <h2 class="mb-3">Visi</h2>
+                        <p class="lead" style="font-size: 1.5rem;">"Terwujudnya Mahasiswa Universitas Dumai yang Berakhlak Mulia, Intelektual, dan Kontributif Berlandaskan Nilai-Nilai Keagamaan."</p>
+                    </div>
+                    
+                    <hr class="my-4">
+
+                    <div class="p-4">
+                        <h2 class="text-center mb-4">Misi</h2>
+                        <div class="row justify-content-center">
+                            <div class="col-md-10">
+                                <ol class="list-group list-group-numbered">
+                                    <li class="list-group-item fs-5">Mengoptimalkan peran masjid kampus sebagai pusat kegiatan keagamaan dan intelektual.</li>
+                                    <li class="list-group-item fs-5">Menyelenggarakan kajian, pelatihan, dan seminar untuk meningkatkan pemahaman keagamaan dan wawasan intelektual mahasiswa.</li>
+                                    <li class="list-group-item fs-5">Membangun program sosial dan pengabdian masyarakat sebagai wujud implementasi nilai-nilai keagamaan.</li>
+                                    <li class="list-group-item fs-5">Mempererat ukhuwah (persaudaraan) antar civitas akademika melalui kegiatan yang inklusif dan harmonis.</li>
+                                    <li class="list-group-item fs-5">Menjadi fasilitator dan mediator bagi aspirasi keagamaan mahasiswa Universitas Dumai.</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="struktur-content" role="tabpanel" aria-labelledby="struktur-tab">
+                    <h2 class="text-center mb-4">Struktur Organisasi Kemenag BEM 2025/2026</h2>
+                    <div class="text-center mb-5">
+                     <img src="assets/foto/strukturorganisasi.jpg" 
+                          class="img-fluid rounded shadow-sm w-50" 
+                          alt="Bagan Struktur Organisasi">
+                    </div>
+                </div>
+
+                <div class="tab-pane fade" id="divisi-content" role="tabpanel" aria-labelledby="divisi-tab">
+                    <h2 class="text-center mb-4">Divisi & Departemen</h2>
+                    <p class="text-center lead mb-4">Kementerian Agama BEM terdiri dari beberapa divisi yang memiliki fokus program kerja masing-masing.</p>
+                    <div class="accordion" id="divisiAccordion">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    <strong>Divisi Dirjen Sosial Keagamaan & Pengabdian</strong>
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#divisiAccordion">
+                                <div class="accordion-body">
+                                    Divisi ini bertanggung jawab untuk merencanakan dan melaksanakan kegiatan syiar Islam di kampus, seperti kajian rutin, peringatan hari besar Islam (PHBI), dan penyebaran konten-konten dakwah melalui berbagai media.
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                </div>
+
+            </div> </div>
+
+    </main>
+
+    <footer class="bg-dark text-white text-center p-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2025 BEM Kemenag - Universitas Dumai. All Rights Reserved.</p>
+            <p>Dikelola oleh Divisi Kemenag BEM</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>

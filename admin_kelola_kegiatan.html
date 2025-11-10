@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kelola Kegiatan - Dashboard Admin</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <style>
+        body { display: flex; min-height: 100vh; flex-direction: column; background-color: #f8f9fa; }
+        .sidebar { width: 280px; background: #212529; position: fixed; top: 0; left: 0; height: 100%; z-index: 100; padding-top: 56px; }
+        .sidebar .nav-link { color: #adb5bd; padding: 10px 20px; }
+        .sidebar .nav-link:hover { color: #fff; background-color: #343a40; }
+        .sidebar .nav-link.active { color: #fff; background-color: #0d6efd; }
+        .sidebar-header { padding: 1.5rem 1.5rem 0.5rem; text-align: center; }
+        .sidebar-header h4 { color: #fff; margin-bottom: 0; }
+        .sidebar-header p { color: #adb5bd; font-size: 0.9rem; }
+        .main-content { margin-left: 280px; padding-top: 56px; width: calc(100% - 280px); }
+        .topbar { height: 56px; background: #fff; border-bottom: 1px solid #dee2e6; position: fixed; top: 0; left: 280px; right: 0; z-index: 99; }
+    </style>
+</head>
+<body>
+
+    <aside class="sidebar">
+        <div class="sidebar-header">
+            <h4>BEM KEMENAG</h4>
+            <p>Admin Panel</p>
+        </div>
+        <ul class="nav flex-column">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="admin_dashboard.html"><i class="bi bi-house-door-fill me-2"></i> Dashboard</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin_kelola_kegiatan.html"><i class="bi bi-calendar-event-fill me-2"></i> Kelola Kegiatan</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin_kelola_artikel.html"><i class="bi bi-file-earmark-text-fill me-2"></i> Kelola Artikel</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin_kelola_laporan.html"><i class="bi bi-file-earmark-arrow-up-fill me-2"></i> Kelola Laporan</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin_kelola_galeri.html"><i class="bi bi-image-fill me-2"></i> Kelola Galeri</a></li>
+            <li class="nav-item"><a class="nav-link" href="admin_kelola_user.html"><i class="bi bi-people-fill me-2"></i> Kelola User</a></li>
+            <hr class="text-secondary">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-globe me-2"></i> Lihat Website Publik</a></li>
+            <li class="nav-item"><a class="nav-link" href="login.html"><i class="bi bi-box-arrow-right me-2"></i> Logout</a></li>
+        </ul>
+    </aside>
+
+    <header class="topbar d-flex align-items-center">
+        <div class="container-fluid d-flex justify-content-end">
+            <div class="dropdown">
+                <a href="#" class="d-flex align-items-center text-dark text-decoration-none dropdown-toggle" id="dropdownUser1" data-bs-toggle="dropdown" aria-expanded="false">
+                    <img src="https://via.placeholder.com/32.png?text=A" alt="" width="32" height="32" class="rounded-circle me-2">
+                    <strong>A'Shril Asmi</strong>
+                </a>
+                <ul class="dropdown-menu dropdown-menu-end text-small shadow" aria-labelledby="dropdownUser1">
+                    <li><a class="dropdown-item" href="#">Profil Saya</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="login.html">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content p-4">
+        
+        <div class="d-flex justify-content-between align-items-center mb-4">
+            <h1 class="h3">Kelola Kegiatan</h1>
+            <a href="admin_tambah_kegiatan.html" class="btn btn-primary">
+              <i class="bi bi-plus-circle-fill me-2"></i> Tambah Kegiatan Baru
+            </a>
+        </div>
+
+        <div class="card shadow-sm">
+            <div class="card-header">
+                Daftar Semua Kegiatan
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-hover table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Judul Kegiatan</th>
+                                <th scope="col">Tanggal</th>
+                                <th scope="col">Kategori</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Aksi</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Kajian Akbar Maulid Nabi</td>
+                                <td>28 Oktober 2025</td>
+                                <td><span class="badge bg-primary">Kajian</span></td>
+                                <td><span class="badge bg-success">Dipublikasi</span></td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-sm" title="Edit">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-sm" title="Hapus">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Bakti Sosial Panti Asuhan</td>
+                                <td>20 Oktober 2025</td>
+                                <td><span class="badge bg-success">Sosial</span></td>
+                                <td><span class="badge bg-success">Dipublikasi</span></td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-sm" title="Edit">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-sm" title="Hapus">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Lomba MTQ Tingkat Fakultas</td>
+                                <td>15 Oktober 2025</td>
+                                <td><span class="badge bg-warning text-dark">Kompetisi</span></td>
+                                <td><span class="badge bg-secondary">Selesai</span></td>
+                                <td>
+                                    <a href="#" class="btn btn-warning btn-sm" title="Edit">
+                                        <i class="bi bi-pencil-fill"></i>
+                                    </a>
+                                    <a href="#" class="btn btn-danger btn-sm" title="Hapus">
+                                        <i class="bi bi-trash-fill"></i>
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <nav aria-label="Page navigation example" class="mt-3">
+                    <ul class="pagination justify-content-end">
+                        <li class="page-item disabled"><a class="page-link" href="#">Sebelumnya</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Selanjutnya</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
